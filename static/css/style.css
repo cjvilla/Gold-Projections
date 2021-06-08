@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(241,234,192);
+    background-size: cover;
+}
+
+.navbar {
+    background-color:  rgb(198,179,120);
+    border: 2px solid rgb(163,138,77);
+}
