@@ -21,9 +21,31 @@ create table gold_prices (
 	Australia float8
 );
 
-create table country_gold_production(
+create table country_gold_production (
 	Name text,
-	code text,
+	Code text,
 	date_recorded date,
 	gold_production float8
+);
+
+create table inflation_rates (
+	date_recorded date,
+	JAN float8,
+	FEB float8,
+	MAR float8,
+	APR float8,
+	MAY float8,
+	JUN float8,
+	JUL float8,
+	AUG float8,
+	SEP float8,
+	OCT float8,
+	NOV float8,
+	DEC float8,
+	AVE float8
+);
+
+create table dollar_index (
+	date_recorded date,
+	value float8
 );
