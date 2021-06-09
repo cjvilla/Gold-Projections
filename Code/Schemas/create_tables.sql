@@ -1,5 +1,5 @@
 create table gold_prices (
-	Name date,
+	date_recorded date,
 	USA float8,
 	Euro float8,
 	Japan float8,
@@ -21,3 +21,9 @@ create table gold_prices (
 	Australia float8
 );
 
+create table country_gold_production(
+	Name text,
+	code text,
+	date_recorded date,
+	gold_production float8
+);
