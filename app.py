@@ -21,6 +21,19 @@ def home():
     return render_template("home.html")
 
 
+################################################
+# Create home page
+#################################################
+@app.route("/price")
+def price():
+    return render_template("goldprice.html")
+
+################################################
+# Create home page
+#################################################
+@app.route("/page2")
+def page2():
+    return render_template("page2.html")
 
 
 
