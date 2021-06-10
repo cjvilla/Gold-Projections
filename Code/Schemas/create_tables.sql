@@ -1,4 +1,4 @@
-create final_inflation_production (
+create table final_inflation_production (
 	Year integer,
 	Month integer,
 	Inflation_Value double precision
