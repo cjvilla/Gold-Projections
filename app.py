@@ -8,6 +8,8 @@ from flask import (
     redirect)
 
 from flask_sqlalchemy import SQLAlchemy
+# from flask_migrate import Migrate
+
 
 #################################################
 # Flask Setup
@@ -18,12 +20,14 @@ app = Flask(__name__)
 #################################################
 # Database setup
 #################################################
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://gold:b00tcamp1!@localhost:5432/gold-project"
+app.config['SQLALCHEMY_DATABASE_URI'] = (
+    f'postgresql+psycopg2://{os.getenv("gold")}:' +
+    f'{os.getenv("b00tcamp1!")}@{os.getenv("gold-project.c58dxtfoq0r7.us-east-2.rds.amazonaws.com")}/{os.getenv("gold-project")}'
+)
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
-
 
 ################################################
 # Create class to get Data
