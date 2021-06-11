@@ -11,4 +11,24 @@ body {
 h1 {
     color: rgb(134,103,1);
     text-align: center;
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    color: rgb(134,103,1); 
+}
+
+img {
+    border-radius: 25px;
+    max-width: 100%;
+    max-height: 100%;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+p {
+    font-size: 18px;
 }
