@@ -32,3 +32,11 @@ img {
 p {
     font-size: 18px;
 }
+
+.col-sm-6 {
+    background-color: rgb(255,246,222);
+    border: 2px solid rgb(163,137,77);
+    padding: 20px;
+    border-radius: 25px;
+
+}
