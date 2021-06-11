@@ -56,6 +56,12 @@ def home():
 def price():
     return render_template("goldprice.html")
 
+################################################
+# Create home page
+#################################################
+@app.route("/graphs")
+def pgraphs():
+    return render_template("graphs.html")
 
 ################################################
 # Create home page
