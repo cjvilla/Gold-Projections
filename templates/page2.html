@@ -38,11 +38,50 @@
 
 <!-- Start of body -->
 
+<body>
 
-<!-- Container for information and images -->
+  <div class="container text-center">
+    <h1 class="display-1">Gold Data</h1>
+    <!-- <div class = "container">
+      <h2>Search for Country / Year</h2>
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Country..">
+      <input type="text" id="myInput2" onkeyup="myFunction2()" placeholder="Search for Year..">
+    </div> -->
+    <div>
+      <table id = "myTable">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Month</th>
+            <th>Inflation Value</th>
+            <th>Dollar Index</th>
+            <th>US Dollar</th>
+            <th>Pound</th>
+            <th>Indian Rupee</th>
+            <th>South African Rand</th>
+            <th>Australian Dollar</th>
 
-
-
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in data %} 
+            <tr>
+              <td>{{row[0]}}</td>
+              <td>{{row[1]}}</td>
+              <td>{{row[2]}}</td>
+              <td>{{row[3]}}</td>
+              <td>{{row[4]}}</td>
+              <td>{{row[5]}}</td>
+              <td>{{row[6]}}</td>
+              <td>{{row[7]}}</td>
+              <td>{{row[8]}}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+</div>
 </body>
 
-</html>
+
+
