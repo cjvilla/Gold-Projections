@@ -56,9 +56,9 @@ def home():
 ################################################
 # Create home page
 #################################################
-@app.route("/price")
+@app.route("/overview")
 def price():
-    return render_template("goldprice.html")
+    return render_template("overview.html")
 
 ################################################
 # Create home page
