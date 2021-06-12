@@ -41,7 +41,6 @@ li {
 
 .col-sm-6 {
     background-color: black;
-    border: 2px solid rgb(163,137,77);
     padding: 20px;
     border-radius: 25px;
 
@@ -49,7 +48,6 @@ li {
 
 .col-sm-12 {
     background-color: black;
-    border: 2px solid rgb(163,137,77);
     padding: 20px;
     border-radius: 25px; 
 }
