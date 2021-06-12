@@ -52,42 +52,107 @@
   </div>
 </div>
 
+
+
 <div class = "container">
   <div class = "row">
-    <div class = "col">
-      <h2 class = "alignleft">Database</h2>
+    <div class = "col-sm-6">
+    <div class = "row">
+    <h2 class = "alignleft">Database</h2>
+  </div>
+    <div class = "row">
+      <p>We chose to use an AWS RDS Database (Postgres build) paired with AWS S3 Buckets for our data.</p> 
+      <p>We created a Bucket in AWS to hold our raw data, and used Postgres to manipulate, merge, and 
+          process the data. From Postgres, data was loaded into Jupyter Notebooks to run our Machine Learning code.</p>
+      <p>
+        In Postgres, we first standardized the data files to ensure data was formatted correctly (headers were the same, data types were the same, etc). From there, we
+        merged the Gold Prices, Inflation Data, and US Dollar index by Month & Year to create a final data set we could feed into our Machine Learning code. 
+      </p>
+      <p>
+        We ran into small hiccups when processing the Year and Month data in Postgres, especially as some data was daily and others were by Year / Month, but we were able to
+        use our knowledge of data groups to process the information.
+      </p>
+    </div>
+    </div>
+    <div class = "col-sm-6">
+      <img src = "../static/css/s3.PNG" style="width:600px;height:300px;">
+      <img src ="../static/css/postgres.PNG" style ="width:600px;height:200px;">
     </div>
   </div>
-  <div class = "row">
-    <p>We chose to use an AWS RDS Database (Postgres build) paired with AWS S3 Buckets for our data. We created a Bucket in AWS to hold our raw data, and used Postgres to manipulate, merge, and 
-      process the data. From Postgres, data was loaded into Jupyter Notebooks to run our Machine Learning code.
-    </p> 
-    <img src = "../static/css/s3.PNG">
-  </div>
+</div>
 
 
 
-
-
-  <div class = "row">
-    <div class = "col">
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-sm-6">
+      <div class = "row">
       <h2 class = "alignleft">Hosting Service</h2>
     </div>
+      <div class = "row">
+        <p>We chose to use an AWS EC2 to host our website, to create a public IP that could be accessed from anywhere and by anyone.</p> 
+        <p>We chose to host using Ubuntu / Flask within the EC2 instance as a way to display out information. </p>
+        <p>
+          We ran into issues when deploying the Flask app into EC2, especially around installing and managing the proper requirements for hosting on EC2. Working with
+          the security groups, key pairings, and Ubuntu / linux commands were not something we spent a ton of time on in class, but through reserach and help from our
+          instructor and TA's we were able to successfully host the EC2 intance to share our data.
+        </p>
+      </div>
+      </div>
+      <div class = "col-sm-6">
+        <img src = "../static/css/ec2.PNG" style="width:600px;height:400px;">
+      </div>
+    </div>
   </div>
-  <div class = "row">
-    <div class = "col">
-     
+
+
+
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-sm-12">
+      <div class = "row">
       <h2 class = "alignleft">Machine Learning</h2>
-     
+    </div>
+      <div class = "row">
+        <p>After several courses of analysis, we decided to use the Long Short-Term Memory (LSTM) Neural Network to analyze Gold Prices against Inflation and the US Dollar Index to try and predict Gold Prices through 2030</p> 
+        <p>We also chose to review how the Random Forest Regressor presented data as well.</p>
+        <p>Please visit these links to view the code used to develop these networks</p>
+
+        <ul>
+          <li><a href="https://colab.research.google.com/drive/1a9Ugu6mJOktUTsLU7AHBLpnH6jkusqf_">Long Short-Term Memory Neural Network (LSTM)</a></li>
+          <li><a href="https://colab.research.google.com/drive/1DFYA9RsCRd8i0HK0dm1v-s8iTl6m2c37">Random Forest Generator</a></li>
+        </ul>
+
+      </div>
+      </div>
     </div>
   </div>
-  <div class = "row">
-    <div class = "col">
-     
+
+
+
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-sm-12">
+      <div class = "row">
       <h2 class = "alignleft">Additional Skills</h2>
-     
+    </div>
+      <div class = "row">
+        <p>Outside of Amazon AWS, Postgres, and Machine Learning networks, we also utilized several other skills / applications to generate our analysis.</p> 
+        <p>They are:</p>
+
+        <ul>
+          <li>Python & Pandas were used to code the Machine Learning Neural Networks, as seen in the links above.</li>
+          <li>Tableau was used to generate our final analysis (see Analysis tab)</li>
+          <li>HTML / CSS / Bootstrap was used to code this website</li>
+          <li>Matplotlib was used to generate graph views within the Collab notesbooks, prior to exporting into Tableau</li>
+        </ul>
+
+      </div>
+      </div>
     </div>
   </div>
+
+
 </div>
 
 
