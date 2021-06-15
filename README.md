@@ -1,5 +1,11 @@
 # Gold-Projections
 
+# Website
+  
+Click this link below for the deployed Website:
+<a href="http://18.222.59.115:8080/">Gold Projections and Machine Learning</a>
+
+
 # Project Background
 
 In 2020, the average closing price of Gold on the US Stock market was $1,773.73. Compared to June of 1971, when Gold was averaging $248.53, that's an increase of 613%! But... why?
