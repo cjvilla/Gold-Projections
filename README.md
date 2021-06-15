@@ -2,7 +2,7 @@
 
 # Website
   
-Click this link below for the deployed Website:
+Click the following link for the deployed Website:
 <a href="http://18.222.59.115:8080/">Gold Projections and Machine Learning</a>
 
 
