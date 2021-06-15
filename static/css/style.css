@@ -20,6 +20,12 @@ h2 {
     color: rgb(134,103,1); 
 }
 
+h3 {
+    font-size: 25px;
+    text-align: left;
+    color: rgb(134,103,1); 
+}
+
 img {
     border-radius: 25px;
     max-width: 100%;
