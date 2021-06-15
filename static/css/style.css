@@ -26,6 +26,12 @@ h3 {
     color: rgb(134,103,1); 
 }
 
+h4 {
+    font-size: 25px;
+    text-align: center;
+    color: rgb(134,103,1); 
+}
+
 img {
     border-radius: 25px;
     max-width: 100%;
